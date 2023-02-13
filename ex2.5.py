@@ -26,7 +26,7 @@ def func2(array, start, end):
     array[start], array[high] = array[high], array[start]
     return high
 
-with open("ex2TestData.json", "r") as file:
+with open("ex2.5.json", "r") as file:
     data = json.load(file)
 
 listLengths = []

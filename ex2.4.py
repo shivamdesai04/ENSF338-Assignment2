@@ -11,7 +11,8 @@ def func1(arr, low, high):
         func1(arr, pi + 1, high)
 
 def func2(array, start, end):
-    p = array[start]
+    middle = (start + end) // 2
+    p = array[middle]
     low = start + 1
     high = end
     while True:
