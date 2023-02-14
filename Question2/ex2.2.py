@@ -40,6 +40,6 @@ for tests in data:
 
 plt.plot(listLengths, quicksortTime)
 plt.title("Time taken for Quicksort vs Length of list being sorted")
-plt.xlabel("Lenght of List")
+plt.xlabel("Length of Lists")
 plt.ylabel("Execution Time")
 plt.show()

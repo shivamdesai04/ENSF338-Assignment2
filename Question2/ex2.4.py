@@ -12,7 +12,8 @@ def func1(arr, low, high):
 
 def func2(array, start, end):
     middle = (start + end) // 2
-    p = array[middle]
+    array[start], array[middle] = array[middle], array[start]
+    p = array[start]
     low = start + 1
     high = end
     while True:
@@ -41,6 +42,6 @@ for tests in data:
 
 plt.plot(listLengths, quicksortTime)
 plt.title("Time taken for Quicksort vs Length of list being sorted")
-plt.xlabel("Lenght of List")
-plt.ylabel("Execution Time")
+plt.xlabel("Lenghts of Lists")
+plt.ylabel("Execution Time (s)")
 plt.show()
