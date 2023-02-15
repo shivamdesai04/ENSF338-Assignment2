@@ -22,6 +22,7 @@ def replaceAndSort(array, deleteItem, insertItem):
             deleteIndex = j
             break 
         j+=1
+
     if (deleteIndex == None):
         print("The element to be deleted does not exist")
         return None
@@ -44,9 +45,8 @@ def replaceAndSort(array, deleteItem, insertItem):
     else:
         array[deleteIndex] = insertItem
 
-
 array = [1,2,5,8,15,20,22]
-deleteItem = 1
-insertItem = 0
+deleteItem = 5
+insertItem = 13
 replaceAndSort(array, deleteItem, insertItem)
 print(array)
